@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: avenirLight;
+    box-sizing: border-box;
+}
+h2, .box{
+    color: #343148;
+}
+body{
+    background-image:url("/images/bg_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border:2px solid black; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+/* login page */
+#mainDiv {
+    /* border: 2px solid black; */
+    background-color: #F9E8E9;
+    width: 53%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 21px;
+    box-shadow: 0px 0px 10px -1px black;   
+}
+#container_primary {
+    /* border:2px solid black; */
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#container h2 {
+    color: white;
+    text-decoration-line: underline;
+}
+
+#login {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#login input{
+    height: 34px;
+    font-size: 16px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px -5px black;
+    border: none;
+}
+
+
+.btn {
+    border-radius: 20px;
+    height: 29px;
+    color: #343148;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 4px -1px black;
+    border:none;
+    cursor: pointer;
+    margin: 10px 0px;
+
+}
+
+.btn:hover {
+    background-color: #b7b7d3;
+}
+
+.btn:active {
+    color: #bdbddd;
+}
+
+/* #container_secondary {
+    border:2px solid black; 
+     margin: 10px;
+} */
+#para{
+    word-spacing: 7px;
+    font-size: 17px;
+}
+/* #para a{
+      text-decoration: none;
+} */
+/* registration page */
+
+#registration {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#registration input{
+    height: 34px;
+    font-size: 16px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px -5px black;
+    border: none;
+
+}

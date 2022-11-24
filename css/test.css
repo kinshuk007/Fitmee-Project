@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #F9E8E9;
+}
+
+.col-sm {
+    font-size: 19px;
+    align-items: justify;
+}
+
+
+/**** home page content *****/
+
+.hero_image .img {
+    margin-top: 0px;
+    width: 20%;
+    height: 100px;
+    opacity: 100%;
+    margin-bottom: 300px;
+    margin-right: 80px;
+}
+
+.centerImage{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 100%;
+}
+.box {
+    position: relative;
+    width: 96%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 1%;
+    height: 830px;
+    background: url('/pix/samples/bubble2.gif');
+}
+
+.top-centered {
+    text-decoration: double;
+    color: #343148;
+    font: 46px/44px sans-serif;
+    position: absolute;
+    flood-color: #3520c2;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 10px 4px 8px 0 rgba(10, 10, 10, 0.2);
+    margin: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.about-section {
+    padding: 60px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.info {
+    padding: 0 16px;
+}
+
+.info::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/*** fit random page **/
+
+.fit_clm {
+    flex: 33.33%;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 5px;
+    border-color: #474e5d;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+    background-color: rgb(160, 160, 27);
+}
+
+.fit_row {
+    content: "afsafa";
+    display: flex;
+    padding: 0px;
+}

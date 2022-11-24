@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Queries</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">FitMEE</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="home"><a href="/">HOME</a></li>
+          <li id="about"><a href="/about">ABOUT US</a></li>
+          <li id="contact"><a href="/contact">CONTACT US</a></li>
+        </ul>
+    </div>
+  </nav> -->
+
+    <body>
+
+
+
+        <div class="container">
+            <br><br><br>
+
+            <div class="alert alert-success wow zoomIn" data-wow-delay="0.1s" role="alert">
+                <h4 class="alert-heading">
+                    <%=title%>
+                </h4>
+                <p>
+                    <%=content%>
+                </p>
+                <hr>
+                <h4 class="alert-heading">Comments --</h4>
+                <p>
+                    <%   for(var i = 0; i < answers.length; i++){  %>
+                        <div class="item">
+                            <p>
+                                <%= i+1%>
+                                    )
+                                    <%=answers[i] %>
+                            </p>
+                        </div>
+                        <%   }  %>
+                </p>
+            </div>
+            <br>
+
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h1 style="color: #343148;">Submit Answers</h1>
+                <form class="" action="/answer" method="post">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="answer" placeholder="Enter Your Answer" required><br>
+                        <button class="btn btn-danger" type="submit" name="button">Publish</button>
+                </form>
+                </div>
+
+
+
+            </div>
+
+    </body>
+
+</html>

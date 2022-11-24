@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login || Register</title>
+    <link href="css/login.css" rel="stylesheet">
+    <script>
+        function validateForm() {
+            let userName = document.forms["myForm"]["username"].value;
+            let text = "0123456789";
+            if (userName == "" && username.length < 5 && username.length > 25 && username.includes(text)) {
+                alert("Please enter valid name.(Min 5 chars and max 25 chars)");
+                return false
+            }
+            // if (email == ""  &&  email.length < 5 && email.length > 25 && emailpassword.) {
+            //     alert("Please enter valid name.(Min 5 chars and max 25 chars)");
+            //     return false
+            // }
+            if (password == "" && password.length < 5 && password.length > 25) {
+                alert("Please enter valid password.(Min 5 chars and max 25 chars)");
+                return false
+            }
+            if (height == "" && height == 0) {
+                alert("Please enter proper height");
+                return false
+            }
+            if (weight == "" && weight == 0) {
+                alert("Please enter proper weight");
+                return false
+            }
+
+
+        }
+    </script>
+</head>
+
+
+<body>
+    <div id="mainDiv">
+        <div id="container_primary">
+            <h2>Join FitMEE</h2>
+            <form action="/registration" method="POST" name="myForm" id="registration" onsubmit="return validateForm()">
+                <label for="username" class="box">Name<spam style="color: red;">*</spam></label>
+                <input type="text" name="username" id="username" placeholder="Enter Your Name" required>
+                <label for="email" class="box">Email<spam style="color: red;">*</spam></label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+
+                <label for="password" class="box">Password(5 or more characters)<spam style="color: red;">*</spam></label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <label for="cpassword" class="box">Confirm Password<spam style="color: red;">*</spam></label>
+                <input type="password" name="cPassword" id="cpassword" placeholder="Password" required>
+
+                <label for="height" class="box">Height<spam style="color: red;">*</spam></label>
+                <input type="number" name="height" id="height" placeholder="Height in cms" required>
+
+                <label for="weight" class="box">Weight<spam style="color: red;">*</spam></label>
+                <input type="number" name="weight" id="weight" placeholder="Weight in kgs" required>
+
+                <!-- <h4 style="color:red;">{{err}}</h4><br/> -->
+                <button type="submit" class="btn" id="submit">Register</button>
+
+            </form>
+        </div>
+        <!-- {{!--  login link--}} -->
+        <div id="container_secondary">
+            <h4 id="para">Have an account? <a href="login.html" style="color: #343148;">Login</a></h4>
+        </div>
+    </div>
+
+</body>
+
+</html>

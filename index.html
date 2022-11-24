@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FitMEE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/test.css" rel="stylesheet">
+    <style>
+        .fitContainer {
+            display: flex;
+            flex-direction: column
+        }
+        
+        .slideImage {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        
+        .articleDetails {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .firstDiv {
+            margin-right: 10px;
+        }
+        
+        .carousel-item {
+            width: 80%;
+            margin-left: 10%;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .fitContainer {
+                flex-direction: row;
+            }
+        }
+        
+        .slide {
+            margin-top: 50px;
+            padding-top: 20px;
+            font-weight: bold;
+            background-color: #343148;
+            width: 74%;
+            margin-left: 13%;
+        }
+        
+        .container {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="top-bar-right">
+                            <div class="social">
+
+                                <a href="registration.html"><i class="fas fa-user-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">F<span>it</span>mee</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="phyart.html" class="nav-item nav-link">Physical</a>
+                    <a href="mental.html" class="nav-item nav-link">Mental</a>
+                    <a href="spiritual.html" class="nav-item nav-link">spiritual</a>
+                    <a href="login.html" class="nav-item nav-link">login</a>
+                    <div class="dropdown show">
+                        <a style="background-color: #343148;" class="btn btn-secondary dropdown-toggle btn-danger nav-item nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Games
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="sudoku.html">Sudoku</a>
+                            <a class="dropdown-item" href="puzzle.html">Puzzle</a>
+                            <a class="dropdown-item" href="hangman.html">Hangman</a>
+                            <a class="dropdown-item" href="quiz.html">Quiz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+    <!-- Hero Start -->
+    <div class="hero" style="background-color: #e2b5b2;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-text">
+                        <h1>Fitness Practice For Good Health</h1>
+                        <p>
+                            One of the most important things people can do for their health is to engage in regular physical activity. A life that includes exercise is one with less likelihood of serious physical and mental ailments. The benefits are wide-ranging, from stronger
+                            bones, greater lung power, and a healthier heart to a lower cancer risk, a sharper brain, aznd a happier spirit.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <div class="hero_image blog-img">
+                        <img src="img/hero.png" alt="Hero Image" width="80%" class="heroImage">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="row justify-content-md-center">
+
+                <div class="col-sm blog-img">
+                    <img src="img/gym.jpg">
+                </div>
+            </div>
+
+            <div class="col-sm" style="color: #343148;">
+                Exercise daily for at least an hour. You do not have to kill yourself from running, jogging, etc., but you should have some sort of moderate physical activity in your everyday life. If you're looking to shed a few pounds fast, do a higher-level intensity
+                workout Keeping track of how many calories you eat in a day will be helpful in planning out your physical exercising. Even though most of us have eight-hour jobs during the day or night, it is crucial to get enough sleep to recharge the
+                body's batteries. An important key to being in shape is to set goals and keep a positive mindset. If you stay positive, you will be able to push yourself to get that fit body you've always wanted.
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="carouselExampleSlidesOnly" style="background-color: #e2b5b2; color: #343148;" class="carousel slide" data-interval="3000" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p>
+                    Joelle is a graduate student in the School of Biological Sciences studying Biohazardous Threat Agents and Emerging Infectious Diseases. She graduated from McGill University in May 2021 with a B.S. in Microbiology and Immunology. She is an ACE Certified
+                    Personal Trainer.Joelle’s goal is to share her passion for fitness and help her clients form sustainable habits that fit with their lifestyle. During her free time, Joelle is an avid runner and enjoys high-intensity interval training
+                    (HIIT) and would define her style of training as dynamic, challenging, and most importantly, fun!
+                </p>
+                <div class="articleDetails">
+                    <div class="firstDiv">
+                        <img class="slideImage" src="img/joelle.jpg" height="50px" width="50%" alt="First slide">
+                    </div>
+                    <div class="secondDiv">
+                        <h4>Joelle</h4>
+                        <p>
+                            ACE Certified Personal Trainer
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <p>
+                    Maegen holds a BS in Biology/Pre-Medical Sciences and a MS in Public Health with a concentration in Nutrition. She is an ACE Certified Personal Trainer and Group Fitness Instructor. She also holds a specialty certification as a Fitness Nutrition Specialist,
+                    Spinning Instructor, and TRX Instructor. Maegen has an extensive background in strength, conditioning, speed, endurance, and agility training as she was a former collegiate athlete. Maegen incorporates a holistic approach to her client
+                    sessions, targeting all components of health and wellness. Her focus on teaching proper form, posture, and balance helps ensure client’s body and spatial awareness while exercising. Maegen aims to educate clients, help them obtain
+                    positive behavior change, and create lifelong healthy habits.
+                </p>
+                <div class="articleDetails">
+                    <div class="firstDiv">
+                        <img class="slideImage" src="img/maegen.jpg" height="50px" width="50%" alt="First slide">
+                    </div>
+                    <div class="secondDiv">
+                        <h4>Maegen</h4>
+                        <p>
+                            Fitness Nutrition Specialist
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <p>Andre holds a BS in Physical Education as well as a MS in Exercise Science and Health Promotion. He is a Certified Strength and Conditioning Specialist (CSCS). He has a background in health and fitness as well as athletic performance training
+                    with over 20 years of certification and experience in the field. His passion for fitness began through his love of sports and developed as a varsity athlete in basketball. His approach to fitness emphasizes age-appropriate programming
+                    with a specific focus given to cardiovascular and strength training in combination with balance and flexibility training. He establishes long-term client interactions with the goal of integrating exercise and optimal wellness into
+                    the demands of daily life.</p>
+                <div class="articleDetails">
+                    <div class="firstDiv">
+                        <img class="slideImage" src="img/andre.jpg" height="50px" width="50%" alt="First slide">
+                    </div>
+                    <div class="secondDiv">
+                        <h4>Andre</h4>
+                        <p>
+                            Strength and Conditioning Specialist
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Start -->
+
+    <!-- Service End -->
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container copyright">
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-info" style="text-align: left;">
+                            <a href="index.html" class="footer-logo footer-info">F<span>it</span>mee</a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4" style="text-align: center; color: #F9E8E9;">
+                        <a href="about.html" class="footer-ac">
+                            <p>About Us</p>
+                        </a>
+                        <a href="contact.html" class="footer-ac">
+                            <p>Contact Us</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Copyright © 2022</p>
+                        <p> All Rights Reserved By FitMEE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
